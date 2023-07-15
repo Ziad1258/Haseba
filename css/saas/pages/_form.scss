@@ -1,0 +1,42 @@
+
+   .main-form {
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 10px $light-grey;
+    border-radius: 10px;
+    @include media(minsmall) {
+    width: 50%;
+    }
+    .holder {
+        label {
+            margin-bottom: 0.4rem;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+        input {
+            outline: none;
+            box-shadow: 0 0 1px $blue;
+            &:focus {
+                box-shadow: 0 0 5px $blue;
+            }
+            &.valid {
+                box-shadow: 0 0 5px $green;
+            }
+            &.not-valid {
+                box-shadow: 0 0 5px $red;
+            }
+        }
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+#trans-box {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+    > .tansfer-button {
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 0;
+        font-weight: normal;
+        font-size: initial;
+    }
+}

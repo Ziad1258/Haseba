@@ -1,0 +1,51 @@
+
+.text-content {
+    h1 {
+        color : $light-black;
+    }
+    >* {
+        margin-bottom: 4rem;
+    }
+}
+.choising-boxes {
+   @include media(maxmobile) {
+    flex-direction: column;
+   }
+}
+.main-row {
+    margin: 3rem 0;
+    .box {
+        height: 300px;
+        @include media (maxmobile) {
+            height: auto;
+        };
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 0 10px 10px #ddd;
+        border-radius: 10px;
+        transition: .4s;
+        cursor: pointer;
+        &:hover {
+            @include media(minsmall) {
+                transform: scale(1.1);
+
+            }
+
+        }
+        .icon {
+            color: $blue;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        .box-title {
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+        .box-text {
+            color: $second-text-color;
+            font-weight: light;
+            font-size: 1.1rem;
+        }
+    }
+}

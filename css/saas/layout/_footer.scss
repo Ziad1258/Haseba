@@ -1,0 +1,54 @@
+footer {
+  background-color: #fff;
+  position: relative;
+  font-size: 1.2rem;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: $blue;
+    left: 50%;
+    top: 0;
+    animation: frame 3s ease-in-out infinite;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: $blue;
+    right: 50%;
+    top: 0;
+    animation: frame 3s ease-in-out infinite;
+  }
+
+  p {
+    a:last-of-type {
+     display: none;
+ }
+ }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    @include colors;
+    @include media(maxmobile) {
+      flex-direction: column;
+    }
+  }
+}
+
+@include kf(frame) {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}

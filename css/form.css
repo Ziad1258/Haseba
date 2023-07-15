@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+#trans-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: start;
+}
+#trans-box > .tansfer-button {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+  font-weight: normal;
+  font-size: initial;
+}
+
+.tn {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.4s;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.tn:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  color: #fff;
+  background-color: rgb(19, 99, 168);
+}
+
+.button-holder {
+  margin: 2rem 0 0;
+}
+.button-holder .tn-moyenne {
+  background-color: green;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  transform: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 571px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #fff;
+  position: relative;
+  font-size: 1.2rem;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #337ab7;
+  left: 50%;
+  top: 0;
+  -webkit-animation: frame 3s ease-in-out infinite;
+          animation: frame 3s ease-in-out infinite;
+}
+footer::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #337ab7;
+  right: 50%;
+  top: 0;
+  -webkit-animation: frame 3s ease-in-out infinite;
+          animation: frame 3s ease-in-out infinite;
+}
+footer p a:last-of-type {
+  display: none;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+footer .social-icons .facebook a {
+  color: #337ab7;
+}
+footer .social-icons .instagram a {
+  color: rgb(146, 97, 5);
+}
+footer .social-icons .whatsapp a {
+  color: green;
+}
+footer .social-icons .telegram a {
+  color: rgb(19, 99, 168);
+}
+@media (max-width: 767px) {
+  footer .social-icons {
+    flex-direction: column;
+  }
+}
+
+@keyframes frame {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@-webkit-keyframes frame {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+.main-form {
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0 10px #f9f9f9;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .main-form {
+    width: 50%;
+  }
+}
+.main-form .holder label {
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.main-form .holder input {
+  outline: none;
+  box-shadow: 0 0 1px #337ab7;
+}
+.main-form .holder input:focus {
+  box-shadow: 0 0 5px #337ab7;
+}
+.main-form .holder input.valid {
+  box-shadow: 0 0 5px green;
+}
+.main-form .holder input.not-valid {
+  box-shadow: 0 0 5px red;
+}
+.main-form .holder:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}/*# sourceMappingURL=form.css.map */

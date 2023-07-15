@@ -1,0 +1,29 @@
+.tn {
+    background-color: $blue;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: .4s;
+    font-size: 1.2rem;
+    font-weight: bold;
+    &:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+        color: #fff;
+        background-color: $hard-blue;
+    }
+}
+.button-holder {
+    margin: 2rem 0 0;
+    .tn-moyenne {
+        background-color: $green;
+        padding: .5rem 1rem;
+        text-transform: capitalize;
+        font-size: 1rem;
+        transform: none;
+    }
+}
+

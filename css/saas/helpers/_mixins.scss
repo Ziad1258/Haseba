@@ -1,0 +1,41 @@
+@mixin colors {
+    @each $site , $color in $socials {
+        .#{$site} a{
+            color:  $color;
+        }
+    }
+}
+
+@mixin  kf($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+    @-webkit-keyframes  #{$name} {
+        @content;
+    }
+}
+
+
+@mixin media($m) {
+    @if $m == mobile {
+      @media #{$mobile} {
+        @content;
+      }
+    } @else if $m == maxmobile {
+      @media #{$max-mobile} {
+        @content;
+      }
+    } @else if $m == minsmall {
+      @media #{$min-small} {
+        @content;
+      }
+    } @else if $m == minmid {
+      @media #{$min-medium} {
+        @content;
+      }
+    } @else if $m == minlg {
+      @media #{$min-large} {
+        @content;
+      }
+    }
+}

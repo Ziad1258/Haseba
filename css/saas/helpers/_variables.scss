@@ -1,0 +1,22 @@
+$grey : #f2f2f2;
+$blue : #337ab7;
+$hard-blue :rgb(19, 99, 168);
+$light-grey : #f9f9f9;
+$light-black : rgba(0, 0, 0, 0.849);
+$second-text-color : #666;
+$orange : rgb(146, 97, 5);
+$green : green;
+$red : red;
+
+$socials: (
+    'facebook': $blue,
+    'instagram': $orange,
+    'whatsapp': $green,
+    'telegram': $hard-blue,
+);
+
+$mobile: "(max-width: 571px)";
+$max-mobile: "(max-width: 767px)";
+$min-small: "(min-width: 768px)";
+$min-medium: "(min-width: 992px)";
+$min-large: "(min-width: 1200px)";
