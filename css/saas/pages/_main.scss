@@ -15,7 +15,7 @@
 .main-row {
     margin: 3rem 0;
     .box {
-        height: 340px;
+        height: 350px;
         @include media (maxmobile) {
             height: auto;
         };
