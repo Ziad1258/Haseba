@@ -30,7 +30,7 @@ body {
     }
     .result-box {
         position: absolute;
-        width: 350px;
+        max-width: 400px;
         background: #fff;
         box-shadow: 0 0 10px $light-grey;
         border-radius: 10px;
@@ -40,6 +40,7 @@ body {
             font-weight: bold;
             color: $blue;
             margin-top: 1rem;
+            font-size: 2rem;
         }
         .result-text {
             color: $second-text-color;
